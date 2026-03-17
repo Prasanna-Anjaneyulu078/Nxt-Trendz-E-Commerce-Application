@@ -1,6 +1,7 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import {Redirect, Link} from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
 
 import './index.css'
 
@@ -136,4 +137,4 @@ class LoginForm extends Component {
   }
 }
 
-export default LoginForm
+export default withRouter(LoginForm)
