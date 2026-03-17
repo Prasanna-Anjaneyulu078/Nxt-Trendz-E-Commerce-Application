@@ -1,7 +1,6 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
-import {Redirect, Link} from 'react-router-dom'
-import {withRouter} from 'react-router-dom'
+import {Redirect, Link, withRouter} from 'react-router-dom'
 
 import './index.css'
 
