@@ -1,6 +1,6 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
-import {Redirect, Link} from 'react-router-dom'
+import {Redirect, Link, withRouter} from 'react-router-dom'
 
 import './index.css'
 
@@ -165,4 +165,4 @@ class RegisterForm extends Component {
   }
 }
 
-export default RegisterForm
+export default withRouter(RegisterForm)
