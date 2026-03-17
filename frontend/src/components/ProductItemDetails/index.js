@@ -1,7 +1,8 @@
 import {Component} from 'react'
 import {Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
-import {ThreeDots} from 'react-loader-spinner'
+import Loader from 'react-loader-spinner'
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import {BsPlusSquare, BsDashSquare} from 'react-icons/bs'
 
 import CartContext from '../../context/CartContext'
@@ -80,7 +81,12 @@ class ProductItemDetails extends Component {
 
   renderLoadingView = () => (
     <div className="products-details-loader-container" data-testid="loader">
-      <ThreeDots color="#0b69ff" height="50" width="50" />
+      <Loader
+        type="Oval"
+        color="#0b69ff"
+        height={50}
+        width={50}
+      />
     </div>
   )
 
